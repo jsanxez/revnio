@@ -1,0 +1,167 @@
+@import 'material-symbols/outlined';
+
+:root {
+  --md-sys-color-background: #fef7ff;
+  --md-sys-color-error: #b3261e;
+  --md-sys-color-error-container: #f9dedc;
+  --md-sys-color-inverse-on-surface: #f5eff7;
+  --md-sys-color-inverse-primary: #FFB4A4;
+  --md-sys-color-inverse-surface: #322f35;
+  --md-sys-color-on-background: #1d1b20;
+  --md-sys-color-on-error: #fff;
+  --md-sys-color-on-error-container: #410e0b;
+  --md-sys-color-on-primary: #FFFFFF;
+  --md-sys-color-on-primary-container: #3D0600;
+  --md-sys-color-on-primary-fixed: #3D0600;
+  --md-sys-color-on-primary-fixed-variant: #8C1800;
+  --md-sys-color-on-secondary: #FFFFFF;
+  --md-sys-color-on-secondary-container: #25005A;
+  --md-sys-color-on-secondary-fixed: #25005A;
+  --md-sys-color-on-secondary-fixed-variant: #5A00C6;
+  --md-sys-color-on-surface: #1d1b20;
+  --md-sys-color-on-surface-variant: #49454f;
+  --md-sys-color-on-tertiary: #FFFFFF;
+  --md-sys-color-on-tertiary-container: #002200;
+  --md-sys-color-on-tertiary-fixed: #002200;
+  --md-sys-color-on-tertiary-fixed-variant: #015300;
+  --md-sys-color-outline: #79747e;
+  --md-sys-color-outline-variant: #cac4d0;
+  --md-sys-color-primary: #B72301;
+  --md-sys-color-primary-container: #FFDAD3;
+  --md-sys-color-primary-fixed: #FFDAD3;
+  --md-sys-color-primary-fixed-dim: #FFB4A4;
+  --md-sys-color-scrim: #000;
+  --md-sys-color-secondary: #7520F3;
+  --md-sys-color-secondary-container: #EADDFF;
+  --md-sys-color-secondary-fixed: #EADDFF;
+  --md-sys-color-secondary-fixed-dim: #D2BBFF;
+  --md-sys-color-shadow: #000;
+  --md-sys-color-surface: #fef7ff;
+  --md-sys-color-surface-bright: #fef7ff;
+  --md-sys-color-surface-container: #f3edf7;
+  --md-sys-color-surface-container-high: #ece6f0;
+  --md-sys-color-surface-container-highest: #e6e0e9;
+  --md-sys-color-surface-container-low: #f7f2fa;
+  --md-sys-color-surface-container-lowest: #fff;
+  --md-sys-color-surface-dim: #ded8e1;
+  --md-sys-color-surface-tint: #B72301;
+  --md-sys-color-surface-variant: #e7e0ec;
+  --md-sys-color-tertiary: #026E00;
+  --md-sys-color-tertiary-container: #77FF61;
+  --md-sys-color-tertiary-fixed: #77FF61;
+
+  --md-sys-elevation-level0: 0px 0px 0px 0px rgba(0, 0, 0, 0.15), 0px 0px 0px 0px rgba(0, 0, 0, 0.3);
+  --md-sys-elevation-level1: 0px 1px 3px 1px rgba(0, 0, 0, 0.15), 0px 1px 2px 0px rgba(0, 0, 0, 0.3);
+  --md-sys-elevation-level2: 0px 2px 6px 2px rgba(0, 0, 0, 0.15), 0px 1px 2px 0px rgba(0, 0, 0, 0.3);
+  --md-sys-elevation-level3: 0px 4px 8px 3px rgba(0, 0, 0, 0.15), 0px 1px 3px 0px rgba(0, 0, 0, 0.3);
+  --md-sys-elevation-level4: 0px 6px 10px 4px rgba(0, 0, 0, 0.15), 0px 2px 3px 0px rgba(0, 0, 0, 0.3);
+  --md-sys-elevation-level5: 0px 8px 12px 6px rgba(0, 0, 0, 0.15), 0px 4px 4px 0px rgba(0, 0, 0, 0.3);
+
+  --corner-none:        0;
+  --corner-extra-small: 4px;
+  --corner-small:       8px;
+  --corner-medium:      12px;
+  --corner-large:       16px;
+  --corner-extra-large: 28px;
+  --corner-full:        999px;
+  --corner-extra-small-top: 4px 4px 0 0;
+  --corner-large-top:       16px 16px 0 0;
+  --corner-large-start:     16px 0 0 16px;
+  --corner-large-end:       0 16px 16px 0;
+  --corner-extra-large-top: 28px 28px 0 0;
+
+  /* --md-sys-typescale-body-large: 400 1rem / 1.5rem Roboto; */
+  --md-sys-typescale-body-large-font: Roboto;
+  --md-sys-typescale-body-large-line-height: 1.5rem;
+  --md-sys-typescale-body-large-size: 1rem;
+  --md-sys-typescale-body-large-tracking: 0.031rem;
+  --md-sys-typescale-body-large-weight: 400;
+  /* --md-sys-typescale-body-medium: 400 0.875rem / 1.25rem Roboto; */
+  --md-sys-typescale-body-medium-font: Roboto;
+  --md-sys-typescale-body-medium-line-height: 1.25rem;
+  --md-sys-typescale-body-medium-size: 0.875rem;
+  --md-sys-typescale-body-medium-tracking: 0.016rem;
+  --md-sys-typescale-body-medium-weight: 400;
+  /* --md-sys-typescale-body-small: 400 0.75rem / 1rem Roboto; */
+  --md-sys-typescale-body-small-font: Roboto;
+  --md-sys-typescale-body-small-line-height: 1rem;
+  --md-sys-typescale-body-small-size: 0.75rem;
+  --md-sys-typescale-body-small-tracking: 0.025rem;
+  --md-sys-typescale-body-small-weight: 400;
+  /* --md-sys-typescale-display-large: 400 3.562rem / 4rem Roboto; */
+  --md-sys-typescale-display-large-font: Roboto;
+  --md-sys-typescale-display-large-line-height: 4rem;
+  --md-sys-typescale-display-large-size: 3.562rem;
+  --md-sys-typescale-display-large-tracking: -0.016rem;
+  --md-sys-typescale-display-large-weight: 400;
+  /* --md-sys-typescale-display-medium: 400 2.812rem / 3.25rem Roboto; */
+  --md-sys-typescale-display-medium-font: Roboto;
+  --md-sys-typescale-display-medium-line-height: 3.25rem;
+  --md-sys-typescale-display-medium-size: 2.812rem;
+  --md-sys-typescale-display-medium-tracking: 0rem;
+  --md-sys-typescale-display-medium-weight: 400;
+  /* --md-sys-typescale-display-small: 400 2.25rem / 2.75rem Roboto; */
+  --md-sys-typescale-display-small-font: Roboto;
+  --md-sys-typescale-display-small-line-height: 2.75rem;
+  --md-sys-typescale-display-small-size: 2.25rem;
+  --md-sys-typescale-display-small-tracking: 0rem;
+  --md-sys-typescale-display-small-weight: 400;
+  /* --md-sys-typescale-headline-large: 400 2rem / 2.5rem Roboto; */
+  --md-sys-typescale-headline-large-font: Roboto;
+  --md-sys-typescale-headline-large-line-height: 2.5rem;
+  --md-sys-typescale-headline-large-size: 2rem;
+  --md-sys-typescale-headline-large-tracking: 0rem;
+  --md-sys-typescale-headline-large-weight: 400;
+  /* --md-sys-typescale-headline-medium: 400 1.75rem / 2.25rem Roboto; */
+  --md-sys-typescale-headline-medium-font: Roboto;
+  --md-sys-typescale-headline-medium-line-height: 2.25rem;
+  --md-sys-typescale-headline-medium-size: 1.75rem;
+  --md-sys-typescale-headline-medium-tracking: 0rem;
+  --md-sys-typescale-headline-medium-weight: 400;
+  /* --md-sys-typescale-headline-small: 400 1.5rem / 2rem Roboto; */
+  --md-sys-typescale-headline-small-font: Roboto;
+  --md-sys-typescale-headline-small-line-height: 2rem;
+  --md-sys-typescale-headline-small-size: 1.5rem;
+  --md-sys-typescale-headline-small-tracking: 0rem;
+  --md-sys-typescale-headline-small-weight: 400;
+  /* --md-sys-typescale-label-large: 500 0.875rem / 1.25rem Roboto; */
+  --md-sys-typescale-label-large-font: Roboto;
+  --md-sys-typescale-label-large-line-height: 1.25rem;
+  --md-sys-typescale-label-large-size: 0.875rem;
+  --md-sys-typescale-label-large-tracking: 0.006rem;
+  --md-sys-typescale-label-large-weight: 500;
+  --md-sys-typescale-label-large-weight-prominent: 700;
+  /* --md-sys-typescale-label-medium: 500 0.75rem / 1rem Roboto; */
+  --md-sys-typescale-label-medium-font: Roboto;
+  --md-sys-typescale-label-medium-line-height: 1rem;
+  --md-sys-typescale-label-medium-size: 0.75rem;
+  --md-sys-typescale-label-medium-tracking: 0.031rem;
+  --md-sys-typescale-label-medium-weight: 500;
+  --md-sys-typescale-label-medium-weight-prominent: 700;
+  /* --md-sys-typescale-label-small: 500 0.688rem / 1rem Roboto; */
+  --md-sys-typescale-label-small-font: Roboto;
+  --md-sys-typescale-label-small-line-height: 1rem;
+  --md-sys-typescale-label-small-size: 0.688rem;
+  --md-sys-typescale-label-small-tracking: 0.031rem;
+  --md-sys-typescale-label-small-weight: 500;
+  /* --md-sys-typescale-title-large: 400 1.375rem / 1.75rem Roboto; */
+  --md-sys-typescale-title-large-font: Roboto;
+  --md-sys-typescale-title-large-line-height: 1.75rem;
+  --md-sys-typescale-title-large-size: 1.375rem;
+  --md-sys-typescale-title-large-tracking: 0rem;
+  --md-sys-typescale-title-large-weight: 400;
+  /* --md-sys-typescale-title-medium: 500 1rem / 1.5rem Roboto; */
+  --md-sys-typescale-title-medium-font: Roboto;
+  --md-sys-typescale-title-medium-line-height: 1.5rem;
+  --md-sys-typescale-title-medium-size: 1rem;
+  --md-sys-typescale-title-medium-tracking: 0.009rem;
+  --md-sys-typescale-title-medium-weight: 500;
+  /* --md-sys-typescale-title-small: 500 0.875rem / 1.25rem Roboto; */
+  --md-sys-typescale-title-small-font: Roboto;
+  --md-sys-typescale-title-small-line-height: 1.25rem;
+  --md-sys-typescale-title-small-size: 0.875rem;
+  --md-sys-typescale-title-small-tracking: 0.006rem;
+  --md-sys-typescale-title-small-weight: 500;
+}
+
+* { box-sizing: border-box; }
