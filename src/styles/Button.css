@@ -1,0 +1,58 @@
+.button {
+  --_container-color: var(--md-sys-color-primary);
+  --_container-elevation: 0;
+  --_container-height: 40px;
+  --_container-shadow-color: black;
+  --_container-shape: var(--corner-full);
+
+  --_container-shape-start-start: var(--_container-shape);
+  --_container-shape-start-end: var(--_container-shape);
+  --_container-shape-end-start: var(--_container-shape);
+  --_container-shape-end-end: var(--_container-shape);
+
+  --_label-text-color: var(--md-sys-color-on-primary);
+  --_label-text-font: var(--md-sys-typescale-label-large-font);
+  --_label-text-size: var(--md-sys-typescale-label-large-size);
+  --_label-text-weight: var(--md-sys-typescale-label-large-weight);
+  --_label-text-line-height: var(--md-sys-typescale-label-large-line-height);
+
+  --_leading-space: 24px;
+  --_trailing-space: 24px;
+
+  --_with-leading-icon-leading-space: 16px;
+  --_with-leading-icon-trailing-space: 24px;
+  --_with-trailing-icon-leading-space: 24px;
+  --_with-trailing-icon-trailing-space: 16px;
+}
+
+.button {
+  border: none;
+}
+.button .material-symbols-outlined { font-size: 18px; }
+
+.button {
+  display: inline-flex;
+  gap: 8px;
+  align-items: center;
+  background-color: var(--_container-color);
+  border-start-start-radius: var(--_container-shape-start-start);
+  border-start-end-radius: var(--_container-shape-start-end);
+  border-end-start-radius: var(--_container-shape-end-start);
+  border-end-end-radius: var(--_container-shape-end-end);
+  color: var(--_label-text-color);
+  font-family: var(--_label-text-font);
+  font-size: var(--_label-text-size);
+  font-weight: var(--_label-text-weight);
+  height: var(--_container-height);
+  padding-left: var(--_leading-space);
+  padding-right: var(--_trailing-space);
+}
+
+.button.-icon-leading {
+  --_leading-space: var(--_with-leading-icon-leading-space);
+  --_trailing-space: var(--_with-leading-icon-trailing-space);
+}
+.button.-icon-trailing {
+  --_leading-space: var(--_with-trailing-icon-leading-space);
+  --_trailing-space: var(--_with-trailing-icon-trailing-space);
+}
