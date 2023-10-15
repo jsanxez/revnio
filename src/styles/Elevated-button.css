@@ -1,0 +1,9 @@
+.elevated-button {
+  --_container-color: var(--md-sys-color-surface-container-low);
+  --_label-text-color: var(--md-sys-color-primary);
+  --_container-elevation: var(--md-sys-elevation-level1);
+  --_hover-state-layer-color: var(--md-sys-color-primary);
+  --_hover-container-elevation: var(--md-sys-elevation-level2);
+  --_pressed-container-elevation: var(--md-sys-elevation-level1); 
+  --_pressed-state-layer-color: var(--md-sys-color-primary);
+}

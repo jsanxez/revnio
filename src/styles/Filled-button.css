@@ -1,3 +1,7 @@
 .filled-button {
   --_container-color: var(--md-sys-color-primary);
+  --_label-text-color: var(--md-sys-color-on-primary);
+  --_hover-state-layer-color: var(--md-sys-color-on-primary);
+  --_hover-container-elevation: var(--md-sys-elevation-level1);
+  --_pressed-state-layer-color: var(--md-sys-color-on-primary);
 }
