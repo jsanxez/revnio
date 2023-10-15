@@ -1,5 +1,8 @@
 import '../styles/Button.css'
+import '../styles/Outlined-button.css'
+import '../styles/Tonal-button.css'
 import '../styles/Filled-button.css'
+import '../styles/Elevated-button.css'
 
 export default function Button({ variant='' }) {
 
