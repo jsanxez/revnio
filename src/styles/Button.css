@@ -22,10 +22,9 @@
   --_with-trailing-icon-trailing-space: 16px;
 
   --_hover-container-elevation: none;
-  --_hover-state-layer-color: var(--md-sys-color-primary);
-  --_hover-state-layer-opacity: 0.08;
   --_pressed-container-elevation: none;
-  --_pressed-state-layer-color: var(--md-sys-color-primary);
+  --_state-layer-color: var(--md-sys-color-primary);
+  --_hover-state-layer-opacity: 0.08;
   --_pressed-state-layer-opacity: 0.12;
   --_state-transition-duration: 280ms;
 }
@@ -83,14 +82,14 @@
 }
 
 .button:hover::after {
-  background: var(--_hover-state-layer-color);
+  background-color: var(--_state-layer-color);
   opacity: var(--_hover-state-layer-opacity);
 }
 
 .button:hover { box-shadow: var(--_hover-container-elevation); }
 
 .button:active::after {
-  background: var(--_pressed-state-layer-color);
+  background: var(--_state-layer-color);
   opacity: var(--_pressed-state-layer-opacity);
 }
 
