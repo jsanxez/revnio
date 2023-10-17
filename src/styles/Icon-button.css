@@ -10,6 +10,11 @@
   --_hover-state-layer-opacity: 0.08;
   --_pressed-state-layer-opacity: 0.12;
   --_state-transition-duration: 280ms;
+
+  --_disabled-opacity: 12%;
+  --_on-disabled-opacity: 38%;
+  --_disabled-color: color-mix(in srgb, var(--md-sys-color-on-surface) var(--_disabled-opacity), transparent);
+  --_on-disabled-color: color-mix(in srgb, var(--md-sys-color-on-surface) var(--_on-disabled-opacity), transparent);
 }
 
 .icon-button {
@@ -56,4 +61,18 @@
 .icon-button.--selected {
   --_icon-color: var(--md-sys-color-primary);
   --_state-layer-color: var(--md-sys-color-primary);
+}
+
+.icon-button:disabled {
+  cursor: default;
+  pointer-events: none;
+  --_icon-color: rgba(29, 27, 32, var(--_on-disabled-opacity));
+  --_outline-color: rgba(29, 27, 32, var(--_disabled-opacity));
+  --_icon-color: var(--_on-disabled-color);
+  --_outline-color: var(--_disabled-color);
+}
+
+.tonal-icon:disabled, .filled-icon:disabled {
+  --_container-color: rgba(29, 27, 32, var(--_disabled-opacity));
+  --_container-color: var(--_disabled-color);
 }
