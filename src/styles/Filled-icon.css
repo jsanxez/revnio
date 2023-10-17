@@ -3,3 +3,9 @@
   --_icon-color: var(--md-sys-color-on-primary);
   --_state-layer-color: var(--md-sys-color-on-primary);
 }
+
+.filled-icon.--unselected {
+  --_container-color: var(--md-sys-color-surface-container-highest);
+  --_icon-color: var(--md-sys-color-primary);
+  --_state-layer-color: var(--md-sys-color-primary);
+}
