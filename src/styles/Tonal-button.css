@@ -1,7 +1,6 @@
 .tonal-button {
   --_container-color: var(--md-sys-color-secondary-container);
   --_label-text-color: var(--md-sys-color-on-secondary-container);
-  --_hover-state-layer-color: var(--md-sys-color-on-secondary-container);
+  --_state-layer-color: var(--md-sys-color-on-secondary-container);
   --_hover-container-elevation: var(--md-sys-elevation-level1);
-  --_pressed-state-layer-color: var(--md-sys-color-on-secondary-container);
 }

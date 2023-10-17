@@ -164,3 +164,13 @@
 }
 
 * { box-sizing: border-box; }
+
+:disabled {
+  cursor: default;
+  pointer-events: none;
+}
+
+button {
+  cursor: pointer;
+  position: relative;
+}
