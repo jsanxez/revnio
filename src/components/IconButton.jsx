@@ -1,3 +1,4 @@
+import '../styles/buttons.css'
 import '../styles/Icon-button.css'
 import '../styles/Outlined-icon.css'
 import '../styles/Tonal-icon.css'

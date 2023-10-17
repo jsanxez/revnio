@@ -1,3 +1,4 @@
+import '../styles/buttons.css'
 import '../styles/Button.css'
 import '../styles/Outlined-button.css'
 import '../styles/Tonal-button.css'
