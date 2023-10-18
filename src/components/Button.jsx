@@ -5,7 +5,7 @@ import '../styles/Tonal-button.css'
 import '../styles/Filled-button.css'
 import '../styles/Elevated-button.css'
 
-export default function Button({ variant, disabled }) {
+export default function Button({ variant='text', disabled }) {
   return (
     <button className={`button ${variant}-button -icon-leading`} disabled={disabled} >
       <span className="material-symbols-outlined">send</span>

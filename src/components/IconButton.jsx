@@ -4,7 +4,7 @@ import '../styles/Outlined-icon.css'
 import '../styles/Tonal-icon.css'
 import '../styles/Filled-icon.css'
 
-export default function IconButton({ iconName, variant, selected=undefined, disabled }) {
+export default function IconButton({ iconName, variant='standard', selected, disabled }) {
   let status = '';
 
   if(selected === true)  status = '--selected';
