@@ -1,0 +1,30 @@
+.fab {
+  --_container-color: var(--md-sys-color-surface-container-high);
+  --_container-height: 56px;
+  --_container-elevation: var(--md-sys-elevation-level3);
+  --_label-text-color: var(--md-sys-color-primary);
+  --_leading-space: 16px;
+  --_trailing-space: 16px;
+  --_container-shape: var(--corner-large);
+  --_gap: 12px;
+
+  --_state-color: var(--md-sys-color-primary);
+  --_hover-container-elevation: var(--md-sys-elevation-level4);
+  --_pressed-container-elevation: var(--md-sys-elevation-level3);
+}
+
+.fab.--primary {
+  --_container-color: var(--md-sys-color-primary-container);
+  --_label-text-color: var(--md-sys-color-on-primary-container);
+  --_state-layer-color: var(--md-sys-color-on-primary-container);
+}
+.fab.--secondary {
+  --_container-color: var(--md-sys-color-secondary-container);
+  --_label-text-color: var(--md-sys-color-on-secondary-container);
+  --_state-layer-color: var(--md-sys-color-on-secondary-container);
+}
+.fab.--tertiary {
+  --_container-color: var(--md-sys-color-tertiary-container);
+  --_label-text-color: var(--md-sys-color-on-tertiary-container);
+  --_state-layer-color: var(--md-sys-color-on-tertiary-container);
+}
