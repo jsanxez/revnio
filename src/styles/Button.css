@@ -1,4 +1,5 @@
 .button {
+  --_gap: 8px;
   --_leading-space: 24px;
   --_trailing-space: 24px;
   --_with-leading-icon-leading-space: 16px;
@@ -9,12 +10,6 @@
 
 .button .material-symbols-outlined { font-size: 18px; }
 
-.button {
-  gap: 8px;
-  padding-left: var(--_leading-space);
-  padding-right: var(--_trailing-space);
-}
-
 .button.-icon-leading {
   --_leading-space: var(--_with-leading-icon-leading-space);
   --_trailing-space: var(--_with-leading-icon-trailing-space);
@@ -23,9 +18,6 @@
   --_leading-space: var(--_with-trailing-icon-leading-space);
   --_trailing-space: var(--_with-trailing-icon-trailing-space);
 }
-
-.button:hover { box-shadow: var(--_hover-container-elevation); }
-.button:active { box-shadow: var(--_pressed-container-elevation); }
 
 .tonal-button:disabled, .filled-button:disabled, .elevated-button:disabled {
   --_container-color: rgba(29, 27, 32, var(--_disabled-opacity));

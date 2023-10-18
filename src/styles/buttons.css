@@ -12,6 +12,9 @@ button {
   --_label-text-size: var(--md-sys-typescale-label-large-size);
   --_label-text-weight: var(--md-sys-typescale-label-large-weight);
   --_icon-color: var(--_label-text-color);
+  --_leading-space: 0;
+  --_trailing-space: 0;
+  --_gap: 0;
   --_outline-color: unset;
   --_outline-width: 0;
 
@@ -30,6 +33,7 @@ button {
 
 button {
   display: inline-flex;
+  gap: var(--_gap);
   align-items: center;
   justify-content: center;
   background-color: var(--_container-color);
@@ -46,6 +50,8 @@ button {
   font-size: var(--_label-text-size);
   font-weight: var(--_label-text-weight);
   height: var(--_container-height);
+  padding-left: var(--_leading-space);
+  padding-right: var(--_trailing-space);
   transition-duration: var(--_state-transition-duration);
   transition-property: box-shadow;
 }
@@ -59,6 +65,9 @@ button::after {
   transition-duration: var(--_state-transition-duration);
   transition-property: opacity;
 }
+
+button:hover { box-shadow: var(--_hover-container-elevation); }
+button:active { box-shadow: var(--_pressed-container-elevation); }
 
 button::after { background-color: var(--_state-layer-color); }
 button:hover::after { opacity: var(--_hover-state-layer-opacity); }
