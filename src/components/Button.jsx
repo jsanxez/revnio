@@ -5,11 +5,14 @@ import '../styles/Tonal-button.css'
 import '../styles/Filled-button.css'
 import '../styles/Elevated-button.css'
 
-export default function Button({ variant='text', disabled }) {
+export default function Button({ children, variant = "text", disabled }) {
+  let iconPosition = ''
+  if(children.length === 2)
+    iconPosition = (typeof children[0] === "string") ? "-icon-trailing" : "-icon-leading"
+
   return (
-    <button className={`button ${variant}-button -icon-leading`} disabled={disabled} >
-      <span className="material-symbols-outlined">send</span>
-      Material M3
+    <button className={`button ${variant}-button ${iconPosition}`} disabled={disabled} >
+      {children}
     </button>
   )
 }
