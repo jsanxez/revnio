@@ -1,0 +1,55 @@
+.card {
+  --_container-color: var(--md-sys-color-surface-container-low);
+  --_container-elevation: var(--md-sys-elevation-level1);
+  --_container-shape: var(--corner-medium);
+  --_container-shape-start-start: var(--_container-shape);
+  --_container-shape-start-end: var(--_container-shape);
+  --_container-shape-end-start: var(--_container-shape);
+  --_container-shape-end-end: var(--_container-shape);
+
+  --_title-text-size: var(--md-sys-typescale-title-large-size);
+  --_title-text-weight: var(--md-sys-typescale-title-large-weight);
+  --_title-text-color: var(--md-sys-color-on-surface);
+  --_subhead-text-size: var(--md-sys-typescale-body-large-size);
+  --_subhead-text-weight: var(--md-sys-typescale-body-large-size);
+  --_subhead-text-color: var(--md-sys-color-on-surface-variant);
+  --_supportive-text-size: var(--md-sys-typescale-body-medium-size);
+  --_supportive-text-weight: var(--md-sys-typescale-body-medium-size);
+  --_supportive-text-color: var(--md-sys-color-on-surface-variant);
+}
+
+.card {
+  display: inline-block;
+  background-color: var(--_container-color);
+  border-start-start-radius: var(--_container-shape-start-start);
+  border-start-end-radius: var(--_container-shape-start-end);
+  border-end-start-radius: var(--_container-shape-end-start);
+  border-end-end-radius: var(--_container-shape-end-end);
+  box-shadow: var(--_container-elevation);
+  width: 360px; /* temporal */
+}
+
+.card > .content {
+  display: inline-flex;
+  flex-flow: column wrap;
+  gap: 32px;
+  padding: 16px;
+}
+.card > .content .title {
+  color: var(--_title-text-color);
+  font-size: var(--_title-text-size);
+  font-weight: var(--_title-text-weight);
+}
+.card > .content .subhead {
+  color: var(--_subhead-text-color);
+  font-size: var(--_subhead-text-size);
+  font-weight: var(--_subhead-text-weight);
+}
+.card > .content .text {
+  color: var(--_supportive-text-color);
+  font-size: var(--_supportive-text-size);
+  font-weight: var(--_supportive-text-weight);
+}
+.card > .content .actions {
+  text-align: right;
+}

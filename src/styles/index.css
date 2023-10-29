@@ -163,7 +163,15 @@
   --md-sys-typescale-title-small-weight: 500;
 }
 
+body {
+  font-family: Roboto, sans-serif;
+}
+
 * { box-sizing: border-box; }
+
+h4, p {
+  margin: 0;
+}
 
 :disabled {
   cursor: default;
