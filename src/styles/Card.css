@@ -30,17 +30,17 @@
 }
 
 .card > .content {
-  display: inline-flex;
+  display: flex;
   flex-flow: column wrap;
-  gap: 32px;
+  gap: 16px;
   padding: 16px;
 }
-.card > .content .title {
+.card .headline > .title {
   color: var(--_title-text-color);
   font-size: var(--_title-text-size);
   font-weight: var(--_title-text-weight);
 }
-.card > .content .subhead {
+.card .headline > .subhead {
   color: var(--_subhead-text-color);
   font-size: var(--_subhead-text-size);
   font-weight: var(--_subhead-text-weight);
@@ -50,6 +50,8 @@
   font-size: var(--_supportive-text-size);
   font-weight: var(--_supportive-text-weight);
 }
-.card > .content .actions {
+.card > .actions {
   text-align: right;
+  padding: 16px;
+  padding-top: unset;
 }
